@@ -6,9 +6,9 @@ from braindecode.models import EEGNet as BraindecoderEEGNet
 """
 used parameters
 (4, 22, 500, 8, 2, 32, 4, 8, 22, 0.5, 0.25) EEGNet8,2
-300 epoch
+800 epoch
 3332
-55.1%
+64.08%
 """
 
 class EEG_Net(nn.Module):

@@ -199,3 +199,4 @@ def NM_train_eval(subject, model, batch_size, criterion, optimizer, epochs, devi
     plt.yticks(rotation=0)
     plt.tight_layout()
     plt.show()
+    return final_holdout_acc

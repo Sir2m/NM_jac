@@ -6,9 +6,9 @@ from braindecode.models import EEGConformer as BraindecoderEEGConformer
 """
 used parametrs
 () the defaults
-70 epoch
+800 epoch
 441412
-59.6%
+65.59%
 """
 
 class EEG_Conformer(nn.Module):

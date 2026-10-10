@@ -13,8 +13,8 @@ def run_(subject, parameters, batch_size, epochs, device, preprocessor, lambda_o
         base_params = [p for n, p in model.named_parameters() if not any(x in n for x in physics_param_names)]
         
         optimizer = optim.AdamW([
-            {'params': base_params, 'lr': 1e-3},
-            {'params': physics_params, 'lr': 1e-4}
+            {'params': base_params, 'lr': 8e-4},
+            {'params': physics_params, 'lr': 1e-5}
         ], weight_decay=1e-3)
         list.append(NM_train_eval(subject, model, batch_size, criterion, optimizer, epochs, device, preprocessor, lambda_ortho, max_lambda))
         print(f"End of {i+1}")

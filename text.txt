@@ -1,0 +1,26 @@
+Training Procedure
+Models were trained and tested in kaggle environment
+on T4 x2 TPU. We used "Braindecode" module models.
+Training parameters are provided in the results seciton
+and the notebooks link are provided in teh repo link. The
+models are trained for 800 epochs (excpct EEGConformer)
+with an Adam optimizer at a learning rate of 0.001 and a
+batch size of 64. The used hyperparameters were chosen
+based on the models' papers. For our model, NH_PINN,
+hyperparameters were chosen based on random experimetns.
+EEGConformer, since it is an attention based model, had
+only 100 epochs. 
+
+Rsults
+
+We evaluated our model through cross validation method
+on BCI comptetion IV 2a dataset. We trained 5 Models on
+each subject and we selected the maximum test accuracy out of
+them then we used the average of these selected results. We
+compared our  model to 3 main models:
+EEGNet: as it is the emerging EEG CNN model, and based
+on reviews, it is becoming the standard CNN model  in
+EEG [Cite the review]
+TCNet: As a frontire model that showed a good results 
+EEGConformer: As an heavy weight attention based model.
+

@@ -6,9 +6,8 @@ import torch.nn.functional as F
 """
 used parameters
 (22, 8, 2, 4, 250, 8)
-
-
-
+300 epoch
+70.22%
 """
 
 class NM_PINN(nn.Module):
